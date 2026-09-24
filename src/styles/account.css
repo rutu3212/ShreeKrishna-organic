@@ -1,0 +1,642 @@
+/* =====================================================
+   SHREEKRISHNA LOGIN PAGE
+===================================================== */
+
+.account-page {
+  position: relative !important;
+
+  width: 100vw !important;
+  min-width: 100vw !important;
+  min-height: 100vh !important;
+
+  margin: 0 !important;
+  padding: 40px 20px !important;
+
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  overflow: hidden !important;
+}
+
+
+/* =====================================================
+   BACKGROUND IMAGE
+===================================================== */
+
+.account-background-image {
+  position: fixed !important;
+
+  top: 0 !important;
+  left: 0 !important;
+
+  width: 100vw !important;
+  height: 100vh !important;
+
+  max-width: none !important;
+
+  object-fit: cover !important;
+  object-position: center !important;
+
+  z-index: 0 !important;
+}
+
+
+/* =====================================================
+   SOFT OVERLAY
+===================================================== */
+
+.account-overlay {
+  position: fixed !important;
+
+  inset: 0 !important;
+
+  width: 100vw !important;
+  height: 100vh !important;
+
+  background:
+    linear-gradient(
+      rgba(30, 55, 36, 0.18),
+      rgba(30, 55, 36, 0.18)
+    ) !important;
+
+  z-index: 1 !important;
+}
+
+
+/* =====================================================
+   CENTER CONTAINER
+===================================================== */
+
+.account-container {
+  position: relative !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  width: 100% !important;
+  max-width: 500px !important;
+
+  min-width: 0 !important;
+
+  margin: auto !important;
+  padding: 0 !important;
+
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  z-index: 10 !important;
+
+  transform: none !important;
+}
+
+
+/* =====================================================
+   GLASS LOGIN CARD
+===================================================== */
+
+.account-card {
+  position: relative !important;
+
+  width: 100% !important;
+  max-width: 455px !important;
+
+  min-width: 0 !important;
+
+  margin: 0 auto !important;
+
+  padding: 30px 38px 28px !important;
+
+  box-sizing: border-box !important;
+
+  border-radius: 22px !important;
+
+  /* Glass effect */
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.88),
+      rgba(246, 246, 232, 0.76)
+    ) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.75) !important;
+
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+
+  box-shadow:
+    0 25px 70px rgba(25, 55, 30, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75) !important;
+
+  z-index: 11 !important;
+
+  overflow: hidden !important;
+
+  transform: none !important;
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.account-brand {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 10px !important;
+
+  margin-bottom: 15px !important;
+
+  color: #405d3c !important;
+
+  text-align: center !important;
+}
+
+.account-brand-icon {
+  width: 48px !important;
+  height: 48px !important;
+
+  flex-shrink: 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border-radius: 50% !important;
+
+  background: #536d42 !important;
+
+  color: #e9d68d !important;
+
+  box-shadow:
+    0 7px 20px rgba(63, 88, 51, 0.22) !important;
+}
+
+.account-brand-text {
+  text-align: left !important;
+}
+
+.account-brand h1 {
+  margin: 0 !important;
+
+  color: #43593b !important;
+
+  font-family: Georgia, serif !important;
+
+  font-size: 21px !important;
+
+  line-height: 1.1 !important;
+
+  letter-spacing: 1px !important;
+}
+
+.account-brand span {
+  display: block !important;
+
+  margin-top: 4px !important;
+
+  color: #a17d32 !important;
+
+  font-size: 10px !important;
+
+  font-weight: 700 !important;
+
+  letter-spacing: 4px !important;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.account-heading {
+  width: 100% !important;
+
+  margin: 0 0 25px !important;
+
+  text-align: center !important;
+}
+
+.account-heading h2 {
+  margin: 0 0 7px !important;
+
+  color: #765936 !important;
+
+  font-family: Georgia, "Times New Roman", serif !important;
+
+  font-size: 31px !important;
+
+  line-height: 1.15 !important;
+}
+
+.account-heading p {
+  margin: 0 !important;
+
+  color: #40503f !important;
+
+  font-size: 15px !important;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.account-form {
+  width: 100% !important;
+
+  margin: 0 !important;
+}
+
+
+/* =====================================================
+   FIELD
+===================================================== */
+
+.account-field {
+  width: 100% !important;
+
+  margin-bottom: 17px !important;
+}
+
+.account-field label {
+  display: block !important;
+
+  margin-bottom: 7px !important;
+
+  color: #344433 !important;
+
+  font-size: 14px !important;
+
+  font-weight: 700 !important;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.account-input-wrapper {
+  width: 100% !important;
+
+  height: 50px !important;
+
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  align-items: center !important;
+
+  gap: 10px !important;
+
+  padding: 0 13px !important;
+
+  border: 1px solid #b9c0ae !important;
+
+  border-radius: 12px !important;
+
+  background: rgba(255, 255, 255, 0.82) !important;
+
+  color: #66715d !important;
+
+  transition: 0.25s ease !important;
+}
+
+.account-input-wrapper:focus-within {
+  border-color: #72916b !important;
+
+  background: rgba(255, 255, 255, 0.96) !important;
+
+  box-shadow:
+    0 0 0 3px rgba(111, 148, 106, 0.12) !important;
+}
+
+.account-input-wrapper input {
+  width: 100% !important;
+
+  min-width: 0 !important;
+
+  border: none !important;
+  outline: none !important;
+
+  background: transparent !important;
+
+  color: #364235 !important;
+
+  font-size: 14px !important;
+}
+
+.account-input-wrapper input::placeholder {
+  color: #7d8579 !important;
+}
+
+
+/* =====================================================
+   PASSWORD TOGGLE
+===================================================== */
+
+.account-password-toggle {
+  flex-shrink: 0 !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 2px !important;
+
+  border: none !important;
+
+  background: transparent !important;
+
+  color: #657260 !important;
+
+  cursor: pointer !important;
+}
+
+
+/* =====================================================
+   REMEMBER / FORGOT
+===================================================== */
+
+.account-options {
+  width: 100% !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  gap: 10px !important;
+
+  margin: 2px 0 22px !important;
+
+  font-size: 13px !important;
+}
+
+.remember-me {
+  display: flex !important;
+
+  align-items: center !important;
+
+  gap: 7px !important;
+
+  color: #414a40 !important;
+
+  white-space: nowrap !important;
+}
+
+.remember-me input {
+  width: 19px !important;
+  height: 19px !important;
+
+  margin: 0 !important;
+
+  accent-color: #6d9672 !important;
+}
+
+.forgot-password {
+  padding: 0 !important;
+
+  border: none !important;
+
+  background: transparent !important;
+
+  color: #526b4f !important;
+
+  font-size: 13px !important;
+
+  text-decoration: underline !important;
+
+  cursor: pointer !important;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.account-submit {
+  width: 100% !important;
+
+  height: 52px !important;
+
+  box-sizing: border-box !important;
+
+  border: none !important;
+
+  border-radius: 12px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #729a76,
+      #5f8866
+    ) !important;
+
+  color: white !important;
+
+  font-size: 16px !important;
+
+  font-weight: 700 !important;
+
+  cursor: pointer !important;
+
+  box-shadow:
+    0 9px 22px rgba(72, 111, 77, 0.25) !important;
+
+  transition: all 0.25s ease !important;
+}
+
+.account-submit:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #628b68,
+      #4e7957
+    ) !important;
+
+  transform: translateY(-2px) !important;
+
+  box-shadow:
+    0 13px 27px rgba(72, 111, 77, 0.32) !important;
+}
+
+
+/* =====================================================
+   SIGN UP
+===================================================== */
+
+.account-switch {
+  width: 100% !important;
+
+  display: flex !important;
+
+  justify-content: center !important;
+  align-items: center !important;
+
+  gap: 5px !important;
+
+  margin-top: 20px !important;
+
+  color: #4d544c !important;
+
+  font-size: 14px !important;
+
+  text-align: center !important;
+}
+
+.account-switch button {
+  padding: 0 !important;
+
+  border: none !important;
+
+  background: transparent !important;
+
+  color: #526f50 !important;
+
+  font-weight: 700 !important;
+
+  text-decoration: underline !important;
+
+  cursor: pointer !important;
+}
+
+
+/* =====================================================
+   BACK LINK
+===================================================== */
+
+.account-back {
+  display: block !important;
+
+  margin-top: 16px !important;
+
+  color: #52634f !important;
+
+  font-size: 13px !important;
+
+  text-align: center !important;
+
+  text-decoration: none !important;
+}
+
+.account-back:hover {
+  color: #365b3b !important;
+
+  text-decoration: underline !important;
+}
+
+
+/* =====================================================
+   FLOATING LEAVES
+===================================================== */
+
+.account-leaf {
+  position: fixed !important;
+
+  z-index: 5 !important;
+
+  color: rgba(220, 238, 197, 0.85) !important;
+
+  pointer-events: none !important;
+
+  filter: drop-shadow(
+    0 4px 8px rgba(0, 0, 0, 0.12)
+  ) !important;
+}
+
+.account-leaf-1 {
+  top: 12% !important;
+  left: 27% !important;
+
+  transform: rotate(-30deg) !important;
+}
+
+.account-leaf-2 {
+  right: 28% !important;
+  bottom: 17% !important;
+
+  transform: rotate(30deg) !important;
+}
+
+.account-leaf-3 {
+  top: 22% !important;
+  right: 30% !important;
+
+  transform: rotate(45deg) !important;
+}
+
+.account-leaf-4 {
+  bottom: 20% !important;
+  left: 31% !important;
+
+  transform: rotate(-20deg) !important;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .account-page {
+    padding: 20px 14px !important;
+  }
+
+  .account-container {
+    max-width: 100% !important;
+  }
+
+  .account-card {
+    max-width: 440px !important;
+
+    padding: 27px 22px !important;
+
+    border-radius: 20px !important;
+  }
+
+  .account-brand h1 {
+    font-size: 18px !important;
+  }
+
+  .account-heading h2 {
+    font-size: 27px !important;
+  }
+
+  .account-heading p {
+    font-size: 14px !important;
+  }
+
+  .account-options {
+    font-size: 12px !important;
+  }
+
+  .forgot-password {
+    font-size: 12px !important;
+  }
+
+  .account-leaf-1 {
+    left: 5% !important;
+  }
+
+  .account-leaf-2 {
+    right: 5% !important;
+  }
+
+  .account-leaf-3,
+  .account-leaf-4 {
+    display: none !important;
+  }
+}

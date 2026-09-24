@@ -1,0 +1,782 @@
+/* =========================================================
+   SUPERFOODS SECTION
+========================================================= */
+
+.superfood-section {
+  width: 100%;
+
+  padding: 42px 0 34px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+.superfood-container {
+  width: 100%;
+
+  max-width: 1920px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.superfood-heading {
+  width: 100%;
+
+  padding: 0 20px;
+
+  margin-bottom: 18px;
+
+  text-align: center;
+}
+
+
+.superfood-heading h2 {
+  margin: 0;
+
+  color: #075f4e;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 38px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   PRODUCT SCROLL
+========================================================= */
+
+.superfood-scroll {
+  width: 100%;
+
+  display: flex;
+
+  align-items: stretch;
+
+  gap: 19px;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+
+  padding:
+    0
+    4px
+    12px;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+
+.superfood-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.superfood-card {
+  position: relative;
+
+  flex: 0 0 300px;
+
+  width: 300px;
+
+  height: 512px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #d5d5d5;
+
+  border-radius: 13px;
+
+  scroll-snap-align: start;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.superfood-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 22px
+    rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   DISCOUNT BADGE
+========================================================= */
+
+.superfood-discount {
+  position: absolute;
+
+  top: -1px;
+
+  left: 9px;
+
+  z-index: 20;
+
+  width: 48px;
+
+  height: 53px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #00685a;
+
+  color: #ffffff;
+
+  border-radius:
+    0
+    0
+    23px
+    23px;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  line-height: 1.05;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   NEW LAUNCH
+========================================================= */
+
+.superfood-badge {
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+  z-index: 20;
+
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding:
+    0
+    13px;
+
+  background: #d99b17;
+
+  color: #ffffff;
+
+  border-radius:
+    0
+    12px
+    0
+    10px;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.superfood-image-wrapper {
+  width: 100%;
+
+  height: 285px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding:
+    14px
+    14px
+    0;
+
+  overflow: hidden;
+
+  text-decoration: none;
+}
+
+
+.superfood-image {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.superfood-card:hover
+.superfood-image {
+  transform: scale(1.025);
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.superfood-action {
+  width: 100%;
+
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  padding:
+    0
+    6px;
+}
+
+
+.superfood-add-button {
+  width: 129px;
+
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #246b59;
+
+  color: #ffffff;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.2s ease;
+}
+
+
+.superfood-add-button:hover {
+  background: #075f4e;
+
+  transform: translateY(-1px);
+}
+
+
+.superfood-sold-out {
+  background: #a5a5a5;
+
+  cursor: not-allowed;
+}
+
+
+.superfood-sold-out:hover {
+  background: #a5a5a5;
+
+  transform: none;
+}
+
+
+/* =========================================================
+   PRODUCT CONTENT
+========================================================= */
+
+.superfood-content {
+  width: 100%;
+
+  padding:
+    0
+    10px
+    8px;
+}
+
+
+/* =========================================================
+   PRODUCT TITLE
+========================================================= */
+
+.superfood-title-link {
+  display: block;
+
+  color: #111111;
+
+  text-decoration: none;
+}
+
+
+.superfood-title {
+  min-height: 48px;
+
+  margin:
+    0
+    0
+    7px;
+
+  color: #151515;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 20px;
+
+  line-height: 1.2;
+
+  font-weight: 500;
+
+  display: -webkit-box;
+
+  -webkit-line-clamp: 2;
+
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.superfood-rating {
+  height: 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  margin-bottom: 7px;
+
+  color: #3b3b3b;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+}
+
+
+.superfood-rating svg {
+  flex-shrink: 0;
+}
+
+
+.superfood-reviews {
+  color: #777777;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.superfood-price {
+  min-height: 31px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 3px;
+}
+
+
+.superfood-old-price {
+  color: #777777;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 19px;
+
+  text-decoration: line-through;
+}
+
+
+.superfood-current-price {
+  color: #171717;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 21px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   OFFER
+========================================================= */
+
+.superfood-offer {
+  width: 100%;
+
+  height: 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  padding:
+    0
+    8px;
+
+  overflow: hidden;
+
+  border-radius: 6px;
+
+  background: #e4f3e6;
+
+  color: #087563;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+}
+
+
+.superfood-offer svg {
+  flex-shrink: 0;
+}
+
+
+.superfood-offer strong {
+  flex-shrink: 0;
+
+  font-weight: 800;
+}
+
+
+.superfood-offer span {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.superfood-bottom {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding:
+    20px
+    20px
+    0;
+}
+
+
+/* =========================================================
+   SCROLL BAR
+========================================================= */
+
+.superfood-scroll-track {
+  position: relative;
+
+  flex: 1;
+
+  height: 10px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #eeeeee;
+}
+
+
+.superfood-scroll-thumb {
+  width: 66%;
+
+  height: 10px;
+
+  border-radius: 10px;
+
+  background: #444444;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.superfood-view-all {
+  flex: 0 0 auto;
+
+  width: 242px;
+
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+
+  border: 1px solid #333333;
+
+  border-radius: 28px;
+
+  background: #ffffff;
+
+  color: #222222;
+
+  text-decoration: none;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.superfood-view-all:hover {
+  background: #075f4e;
+
+  border-color: #075f4e;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .superfood-heading h2 {
+    font-size: 34px;
+  }
+
+  .superfood-card {
+    flex-basis: 285px;
+
+    width: 285px;
+  }
+
+  .superfood-image-wrapper {
+    height: 275px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .superfood-section {
+    padding:
+      40px
+      0
+      28px;
+  }
+
+  .superfood-heading {
+    margin-bottom: 18px;
+  }
+
+  .superfood-heading h2 {
+    font-size: 29px;
+  }
+
+  .superfood-scroll {
+
+    gap: 14px;
+
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+  .superfood-card {
+
+    flex: 0 0 270px;
+
+    width: 270px;
+
+    height: 490px;
+  }
+
+  .superfood-image-wrapper {
+    height: 255px;
+  }
+
+  .superfood-action {
+    height: 56px;
+  }
+
+  .superfood-add-button {
+
+    width: 125px;
+
+    height: 48px;
+
+    font-size: 17px;
+  }
+
+  .superfood-title {
+    font-size: 18px;
+  }
+
+  .superfood-old-price {
+    font-size: 18px;
+  }
+
+  .superfood-current-price {
+    font-size: 20px;
+  }
+
+  .superfood-bottom {
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 15px;
+
+    padding:
+      12px
+      14px
+      0;
+  }
+
+  .superfood-scroll-track {
+    width: 100%;
+  }
+
+  .superfood-view-all {
+
+    width: 100%;
+
+    min-width: 0;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .superfood-card {
+
+    flex-basis: 260px;
+
+    width: 260px;
+  }
+
+  .superfood-heading h2 {
+    font-size: 27px;
+  }
+}

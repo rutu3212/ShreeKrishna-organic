@@ -1,0 +1,3204 @@
+/* =========================================================
+   PRODUCT FOCUS SECTION
+========================================================= */
+
+.product-focus-section {
+  width: 100%;
+  padding: 65px 0 70px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.product-focus-header {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.product-focus-label {
+  margin: 0 0 8px;
+  color: #075f4e;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.product-focus-header h2 {
+  margin: 0;
+  color: #075f4e;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+
+/* =========================================================
+   CATEGORY SECTION
+========================================================= */
+
+.oil-categories {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 42px;
+
+  width: 100%;
+  margin: 0 auto 25px;
+  padding: 0 20px;
+
+  border-bottom: 1px solid #e2e2e2;
+}
+
+
+/* CATEGORY */
+
+.oil-category {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 95px;
+  padding: 0 5px 17px;
+
+  color: #075f4e;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* ICON */
+
+.oil-category-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 65px;
+  height: 65px;
+
+  margin-bottom: 7px;
+
+  color: #075f4e;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* TEXT */
+
+.oil-category span {
+  color: #333333;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.3s ease;
+}
+
+
+/* HOVER */
+
+.oil-category:hover {
+  transform: translateY(-4px);
+}
+
+.oil-category:hover .oil-category-icon {
+  color: #b08b2e;
+  transform: scale(1.08);
+}
+
+.oil-category:hover span {
+  color: #075f4e;
+}
+
+
+/* ACTIVE-LIKE UNDERLINE */
+
+.oil-category:first-child::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -1px;
+  left: 50%;
+
+  width: 85px;
+  height: 4px;
+
+  background: #075f4e;
+
+  border-radius: 5px;
+
+  transform: translateX(-50%);
+}
+
+
+/* =========================================================
+   PRODUCT HORIZONTAL SCROLL
+========================================================= */
+
+.product-focus-products {
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  gap: 16px;
+
+  width: 100%;
+
+  padding: 0 65px 12px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    #075f4e
+    #eeeeee;
+}
+
+
+/* CHROME SCROLLBAR */
+
+.product-focus-products::-webkit-scrollbar {
+  height: 7px;
+}
+
+.product-focus-products::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border-radius: 10px;
+}
+
+.product-focus-products::-webkit-scrollbar-thumb {
+  background: #075f4e;
+  border-radius: 10px;
+}
+
+.product-focus-products::-webkit-scrollbar-thumb:hover {
+  background: #064d40;
+}
+
+
+/* =========================================================
+   OIL PRODUCT CARD
+========================================================= */
+
+.oil-product-card {
+  position: relative;
+
+  flex: 0 0 337px;
+
+  width: 337px;
+  min-width: 337px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #d9d9d9;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.05);
+
+  scroll-snap-align: start;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.oil-product-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   OIL IMAGE AREA
+========================================================= */
+
+.oil-product-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 365px;
+
+  background: #f5f5f3;
+
+  overflow: hidden;
+}
+
+
+/* PRODUCT IMAGE */
+
+.oil-product-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 12px;
+
+  transition:
+    transform 0.5s ease;
+}
+
+.oil-product-card:hover
+.oil-product-image {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   DISCOUNT BADGE
+========================================================= */
+
+.oil-discount-badge {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 52px;
+
+  padding: 5px;
+
+  background: #075f4e;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-align: center;
+
+  border-radius:
+    0 0 25px 0;
+}
+
+
+/* =========================================================
+   PRODUCT BADGE
+========================================================= */
+
+.oil-product-badge {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  z-index: 5;
+
+  padding: 8px 14px;
+
+  background: #d09a1f;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  border-radius:
+    0 0 0 12px;
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.oil-add-button {
+  position: absolute;
+
+  right: 7px;
+  bottom: 7px;
+
+  z-index: 8;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  min-width: 127px;
+
+  padding: 14px 22px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #075f4e;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.oil-add-button:hover {
+  background: #b08b2e;
+
+  transform: translateY(-2px);
+}
+
+.oil-add-button:active {
+  transform: scale(0.96);
+}
+
+
+/* =========================================================
+   PRODUCT CONTENT
+========================================================= */
+
+.oil-product-content {
+  position: relative;
+
+  padding: 17px 12px 13px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.oil-product-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.oil-product-title {
+  min-height: 58px;
+
+  margin: 0 0 8px;
+
+  color: #111111;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 19px;
+  font-weight: 500;
+
+  line-height: 1.25;
+}
+
+.oil-product-title-link:hover
+.oil-product-title {
+  color: #075f4e;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.oil-product-rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-bottom: 10px;
+
+  color: #f2ad00;
+
+  font-size: 14px;
+}
+
+.oil-product-rating svg {
+  color: #f2ad00;
+}
+
+.oil-review-count {
+  color: #777777;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.oil-product-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 10px;
+}
+
+.oil-old-price {
+  color: #888888;
+
+  font-size: 18px;
+
+  text-decoration: line-through;
+}
+
+.oil-current-price {
+  color: #111111;
+
+  font-size: 21px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST PRICE
+========================================================= */
+
+.oil-best-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  width: 100%;
+
+  padding: 5px 7px;
+
+  background: #e8f5e9;
+
+  color: #14705b;
+
+  border-radius: 5px;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+.oil-best-price strong {
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   SELLING FAST
+========================================================= */
+
+.oil-selling-fast {
+  position: absolute;
+
+  right: 12px;
+  bottom: 47px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 7px 12px;
+
+  background: #d5a21d;
+
+  color: #ffffff;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   SHOP PAGE
+========================================================= */
+
+.products-page {
+  width: 100%;
+
+  min-height: 100vh;
+
+  padding:
+    70px 0
+    90px;
+
+  background: #f8f7f1;
+}
+
+.products-page-container {
+  width: 100%;
+
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  padding: 0 30px;
+}
+
+
+/* HEADER */
+
+.products-page-header {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.products-back-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 25px;
+
+  color: #075f4e;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.products-back-link:hover {
+  color: #b08b2e;
+}
+
+.products-small-title {
+  margin: 0 0 7px;
+
+  color: #b08b2e;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.products-page-header h1 {
+  margin: 0;
+
+  color: #075f4e;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 44px;
+
+  font-weight: 600;
+}
+
+.products-divider {
+  width: 70px;
+  height: 3px;
+
+  margin: 15px auto;
+
+  background: #b08b2e;
+
+  border-radius: 5px;
+}
+
+.products-page-header p:last-child {
+  color: #666666;
+
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   SHOP GRID
+========================================================= */
+
+.products-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* SHOP CARD */
+
+.shop-product-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 14px;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.shop-product-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* IMAGE */
+
+.shop-product-image {
+  position: relative;
+
+  height: 300px;
+
+  background: #f5f5f3;
+
+  overflow: hidden;
+}
+
+.shop-product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 15px;
+
+  transition:
+    transform 0.4s ease;
+}
+
+.shop-product-card:hover
+.shop-product-image img {
+  transform: scale(1.05);
+}
+
+
+/* DISCOUNT */
+
+.shop-discount {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+
+  padding: 8px 12px;
+
+  background: #075f4e;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  border-radius:
+    0 0 12px 0;
+}
+
+
+/* CONTENT */
+
+.shop-product-content {
+  padding: 17px;
+}
+
+.shop-category {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #075f4e;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+}
+
+.shop-product-content h2 {
+  min-height: 52px;
+
+  margin: 0 0 10px;
+
+  color: #222222;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  line-height: 1.35;
+}
+
+
+/* RATING */
+
+.shop-rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-bottom: 10px;
+
+  color: #efa900;
+
+  font-size: 13px;
+}
+
+.shop-rating span:last-child {
+  color: #777777;
+}
+
+
+/* PRICE */
+
+.shop-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 13px;
+}
+
+.shop-old-price {
+  color: #999999;
+
+  font-size: 14px;
+
+  text-decoration: line-through;
+}
+
+.shop-price strong {
+  color: #075f4e;
+
+  font-size: 21px;
+}
+
+
+/* VIEW PRODUCT */
+
+.shop-view-product {
+  display: inline-block;
+
+  color: #075f4e;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   NO PRODUCTS
+========================================================= */
+
+.no-products {
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+.no-products h2 {
+  color: #333333;
+}
+
+.no-products a {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 12px 22px;
+
+  background: #075f4e;
+
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .oil-categories {
+    gap: 25px;
+  }
+
+  .product-focus-products {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .oil-product-card {
+    flex-basis: 300px;
+    width: 300px;
+    min-width: 300px;
+  }
+
+  .oil-product-image-wrapper {
+    height: 330px;
+  }
+
+  .products-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================================================
+   TABLET SMALL
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .product-focus-label {
+    font-size: 36px;
+  }
+
+  .product-focus-header h2 {
+    font-size: 31px;
+  }
+
+  .oil-categories {
+    justify-content: flex-start;
+
+    gap: 22px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .oil-categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .oil-category {
+    flex: 0 0 auto;
+  }
+
+  .products-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .product-focus-section {
+    padding:
+      50px 0
+      55px;
+  }
+
+  .product-focus-header {
+    margin-bottom: 25px;
+  }
+
+  .product-focus-label {
+    font-size: 29px;
+  }
+
+  .product-focus-header h2 {
+    font-size: 24px;
+  }
+
+  .oil-categories {
+    padding:
+      0 16px
+      15px;
+  }
+
+  .oil-category {
+    min-width: 80px;
+  }
+
+  .oil-category-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .oil-category-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .oil-category span {
+    font-size: 14px;
+  }
+
+  .oil-category:first-child::after {
+    width: 70px;
+  }
+
+  .product-focus-products {
+    gap: 13px;
+
+    padding:
+      0 16px
+      12px;
+  }
+
+  .oil-product-card {
+    flex-basis: 280px;
+    width: 280px;
+    min-width: 280px;
+  }
+
+  .oil-product-image-wrapper {
+    height: 310px;
+  }
+
+  .oil-product-title {
+    font-size: 17px;
+  }
+
+  .oil-current-price {
+    font-size: 19px;
+  }
+
+  .oil-old-price {
+    font-size: 15px;
+  }
+
+  .oil-best-price {
+    font-size: 11px;
+  }
+
+  /* SHOP PAGE */
+
+  .products-page {
+    padding:
+      50px 0
+      60px;
+  }
+
+  .products-page-container {
+    padding: 0 16px;
+  }
+
+  .products-page-header h1 {
+    font-size: 32px;
+  }
+
+  .products-page-header p:last-child {
+    font-size: 14px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .shop-product-image {
+    height: 330px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .oil-product-card {
+    flex-basis: 260px;
+    width: 260px;
+    min-width: 260px;
+  }
+
+  .oil-product-image-wrapper {
+    height: 290px;
+  }
+
+  .product-focus-label {
+    font-size: 26px;
+  }
+
+  .product-focus-header h2 {
+    font-size: 22px;
+  }
+}
+
+
+/* =========================================================
+   GHEE PRODUCT FOCUS - COMPLETE FIX
+========================================================= */
+
+.ghee-product-focus {
+  width: 100%;
+  padding: 80px 0 90px !important;
+  background: #f7f3e8;
+  overflow: hidden;
+}
+
+.ghee-product-focus-container {
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ghee-product-focus-header {
+  display: block;
+  width: 100%;
+  margin: 0 auto 35px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.ghee-product-focus-small-title {
+  display: block;
+
+  margin: 0 0 8px !important;
+
+  color: #075f4e !important;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif !important;
+
+  font-size: 18px !important;
+  font-weight: 700 !important;
+
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.ghee-product-focus-header h2 {
+  display: block;
+
+  margin: 0 !important;
+
+  color: #075f4e !important;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif !important;
+
+  font-size: 42px !important;
+  font-weight: 500 !important;
+
+  line-height: 1.25;
+}
+
+
+/* GOLD LINE */
+
+.ghee-product-focus-header::after {
+  content: "";
+
+  display: block;
+
+  width: 70px;
+  height: 3px;
+
+  margin: 18px auto 0;
+
+  background: #b08b2e;
+
+  border-radius: 20px;
+}
+
+
+/* =========================================================
+   GHEE CATEGORIES
+========================================================= */
+
+.ghee-categories {
+  display: flex !important;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 100%;
+
+  gap: 60px;
+
+  margin: 0 auto 45px !important;
+
+  padding: 0 20px;
+
+  background: transparent;
+
+  overflow: visible;
+}
+
+.ghee-category {
+  display: flex !important;
+
+  flex: 0 0 auto;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 95px;
+  min-width: 95px;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #333;
+
+  font-family: Arial, sans-serif;
+
+  cursor: pointer;
+
+  appearance: none;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.ghee-category:hover {
+  transform: translateY(-5px);
+}
+
+.ghee-category-icon {
+  display: flex !important;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 76px !important;
+  height: 76px !important;
+
+  margin: 0 0 10px !important;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  font-size: 43px !important;
+
+  line-height: 1;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.ghee-category:hover .ghee-category-icon {
+  transform: scale(1.08);
+
+  box-shadow:
+    0 12px 30px rgba(7, 95, 78, 0.16);
+}
+
+.ghee-category span {
+  display: block;
+
+  margin: 0;
+
+  color: #333333 !important;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px !important;
+
+  font-weight: 600 !important;
+
+  line-height: 1.3;
+
+  text-align: center;
+}
+
+
+/* ACTIVE CATEGORY */
+
+.ghee-category.active {
+  color: #075f4e;
+}
+
+.ghee-category.active span {
+  color: #075f4e !important;
+}
+
+.ghee-category.active .ghee-category-icon {
+  background: #075f4e;
+
+  box-shadow:
+    0 10px 28px rgba(7, 95, 78, 0.25);
+
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   PRODUCTS SCROLL
+========================================================= */
+
+.ghee-products-scroll {
+  display: flex !important;
+
+  flex-direction: row;
+
+  flex-wrap: nowrap !important;
+
+  align-items: stretch;
+
+  gap: 22px;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0 32px 25px;
+
+  overflow-x: auto !important;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    #075f4e
+    #e4e4e4;
+}
+
+
+/* SCROLLBAR */
+
+.ghee-products-scroll::-webkit-scrollbar {
+  height: 7px;
+}
+
+.ghee-products-scroll::-webkit-scrollbar-track {
+  background: #e4e4e4;
+
+  border-radius: 10px;
+}
+
+.ghee-products-scroll::-webkit-scrollbar-thumb {
+  background: #075f4e;
+
+  border-radius: 10px;
+}
+
+.ghee-products-scroll::-webkit-scrollbar-thumb:hover {
+  background: #064d40;
+}
+
+
+/* =========================================================
+   GHEE PRODUCT CARD
+========================================================= */
+
+.ghee-products-scroll .product-focus-card {
+  position: relative;
+
+  display: flex !important;
+
+  flex: 0 0 335px !important;
+
+  flex-direction: column;
+
+  width: 335px !important;
+
+  min-width: 335px !important;
+
+  max-width: 335px !important;
+
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #dedede;
+
+  border-radius: 16px;
+
+  box-sizing: border-box;
+
+  scroll-snap-align: start;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.ghee-products-scroll
+.product-focus-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   GHEE PRODUCT IMAGE
+========================================================= */
+
+.ghee-products-scroll
+.product-focus-image-wrapper {
+  position: relative;
+
+  display: block;
+
+  width: 100% !important;
+
+  height: 290px !important;
+
+  min-height: 290px !important;
+
+  max-height: 290px !important;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  background: #f5f3eb;
+
+  box-sizing: border-box;
+}
+
+.ghee-products-scroll
+.product-focus-image {
+  display: block;
+
+  width: 100% !important;
+
+  height: 100% !important;
+
+  min-height: 0 !important;
+
+  max-height: none !important;
+
+  margin: 0;
+
+  padding: 10px;
+
+  object-fit: contain;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.5s ease;
+}
+
+.ghee-products-scroll
+.product-focus-card:hover
+.product-focus-image {
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   GHEE PRODUCT CONTENT
+========================================================= */
+
+.ghee-products-scroll
+.product-focus-card-content {
+  position: relative;
+
+  display: flex !important;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 17px 16px 18px !important;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* CATEGORY */
+
+.ghee-products-scroll
+.product-focus-category {
+  margin: 0 0 7px !important;
+
+  color: #075f4e !important;
+
+  font-size: 12px !important;
+
+  font-weight: 700 !important;
+
+  line-height: 1.3;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.8px;
+}
+
+
+/* PRODUCT NAME */
+
+.ghee-products-scroll
+.product-focus-name {
+  min-height: 50px;
+
+  margin: 0 0 9px !important;
+
+  color: #333333 !important;
+
+  font-family: Arial, sans-serif !important;
+
+  font-size: 17px !important;
+
+  font-weight: 600 !important;
+
+  line-height: 1.4;
+
+  text-decoration: none;
+}
+
+.ghee-products-scroll
+.product-focus-card-content a {
+  display: block;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.ghee-products-scroll
+.product-focus-rating {
+  display: flex !important;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin: 0 0 11px !important;
+
+  color: #d69d1e;
+
+  font-size: 13px;
+}
+
+.ghee-products-scroll
+.product-focus-rating svg {
+  flex-shrink: 0;
+
+  color: #e0a51d;
+}
+
+.ghee-products-scroll
+.review-count {
+  color: #777777;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.ghee-products-scroll
+.product-focus-price {
+  display: flex !important;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin: 0 0 14px !important;
+}
+
+.ghee-products-scroll
+.product-focus-old-price {
+  color: #999999;
+
+  font-size: 14px;
+
+  text-decoration: line-through;
+}
+
+.ghee-products-scroll
+.product-focus-current-price {
+  color: #075f4e;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   ADD CART BUTTON
+========================================================= */
+
+.ghee-products-scroll
+.product-focus-add-button {
+  position: relative !important;
+
+  display: flex !important;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  width: 100% !important;
+
+  height: auto !important;
+
+  min-height: 44px;
+
+  margin: 0 !important;
+
+  padding: 11px 16px !important;
+
+  border: none !important;
+
+  border-radius: 9px;
+
+  background: #075f4e !important;
+
+  color: #ffffff !important;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px !important;
+
+  font-weight: 700 !important;
+
+  line-height: 1.2;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ghee-products-scroll
+.product-focus-add-button:hover {
+  background: #b08b2e !important;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(176, 139, 46, 0.25);
+}
+
+.ghee-products-scroll
+.product-focus-add-button:active {
+  transform: scale(0.97);
+}
+
+
+/* =========================================================
+   NO PRODUCTS
+========================================================= */
+
+.ghee-no-products {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  min-height: 200px;
+
+  text-align: center;
+}
+
+.ghee-no-products h3 {
+  margin: 0;
+
+  color: #075f4e;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 24px;
+}
+
+
+/* =========================================================
+   GHEE TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .ghee-product-focus {
+    padding: 65px 0 75px !important;
+  }
+
+  .ghee-product-focus-header h2 {
+    font-size: 35px !important;
+  }
+
+  .ghee-categories {
+    gap: 40px;
+  }
+
+  .ghee-products-scroll {
+    gap: 18px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .ghee-products-scroll
+  .product-focus-card {
+    flex: 0 0 290px !important;
+
+    width: 290px !important;
+
+    min-width: 290px !important;
+
+    max-width: 290px !important;
+  }
+
+  .ghee-products-scroll
+  .product-focus-image-wrapper {
+    height: 260px !important;
+
+    min-height: 260px !important;
+
+    max-height: 260px !important;
+  }
+}
+
+
+/* =========================================================
+   GHEE MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .ghee-product-focus {
+    padding: 50px 0 60px !important;
+  }
+
+  .ghee-product-focus-header {
+    padding: 0 16px;
+
+    margin-bottom: 25px;
+  }
+
+  .ghee-product-focus-small-title {
+    font-size: 16px !important;
+  }
+
+  .ghee-product-focus-header h2 {
+    font-size: 28px !important;
+  }
+
+  .ghee-categories {
+    justify-content: flex-start;
+
+    gap: 22px;
+
+    margin: 0 0 30px !important;
+
+    padding: 0 16px 10px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .ghee-categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ghee-category {
+    width: 75px;
+    min-width: 75px;
+  }
+
+  .ghee-category-icon {
+    width: 55px !important;
+    height: 55px !important;
+
+    font-size: 34px !important;
+  }
+
+  .ghee-category span {
+    font-size: 14px !important;
+  }
+
+  .ghee-products-scroll {
+    gap: 14px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .ghee-products-scroll
+  .product-focus-card {
+    flex: 0 0 270px !important;
+
+    width: 270px !important;
+
+    min-width: 270px !important;
+
+    max-width: 270px !important;
+  }
+
+  .ghee-products-scroll
+  .product-focus-image-wrapper {
+    height: 235px !important;
+
+    min-height: 235px !important;
+
+    max-height: 235px !important;
+  }
+
+  .ghee-products-scroll
+  .product-focus-card-content {
+    padding: 13px !important;
+  }
+
+  .ghee-products-scroll
+  .product-focus-name {
+    font-size: 16px !important;
+  }
+
+  .ghee-products-scroll
+  .product-focus-current-price {
+    font-size: 20px;
+  }
+}
+
+
+/* =========================================================
+   COMMON PRODUCT CARD
+   ProductCard.jsx
+========================================================= */
+
+.product-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 0 335px;
+
+  width: 335px;
+  min-width: 335px;
+  max-width: 335px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #dedede;
+
+  border-radius: 16px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.06);
+
+  scroll-snap-align: start;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   COMMON PRODUCT IMAGE
+========================================================= */
+
+.product-card-image {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+
+  height: 300px;
+  min-height: 300px;
+
+  overflow: hidden;
+
+  background: #f5f3eb;
+
+  box-sizing: border-box;
+}
+
+.product-card-image a {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.product-card-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 12px;
+
+  object-fit: contain;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.5s ease;
+}
+
+.product-card:hover
+.product-card-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   COMMON DISCOUNT
+========================================================= */
+
+.product-discount {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 60px;
+
+  padding: 8px 10px;
+
+  background: #075f4e;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  border-radius:
+    0 0 12px 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   COMMON PRODUCT BADGE
+========================================================= */
+
+.product-badge {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  z-index: 5;
+
+  padding: 8px 12px;
+
+  background: #b08b2e;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  border-radius:
+    0 0 0 12px;
+}
+
+
+/* =========================================================
+   COMMON SELLING FAST
+========================================================= */
+
+.product-selling-fast {
+  position: absolute;
+
+  left: 12px;
+  bottom: 12px;
+
+  z-index: 6;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 7px 11px;
+
+  background: #b08b2e;
+
+  color: #ffffff;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   COMMON ADD BUTTON
+========================================================= */
+
+.product-add-button {
+  position: absolute;
+
+  right: 10px;
+  bottom: 10px;
+
+  z-index: 8;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  min-width: 105px;
+
+  padding: 11px 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #075f4e;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.product-add-button:hover {
+  background: #b08b2e;
+
+  transform: translateY(-2px);
+}
+
+.product-add-button:active {
+  transform: scale(0.96);
+}
+
+
+/* =========================================================
+   COMMON PRODUCT CONTENT
+========================================================= */
+
+.product-card-content {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  width: 100%;
+
+  padding: 16px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   COMMON CATEGORY
+========================================================= */
+
+.product-card-category {
+  margin: 0 0 7px;
+
+  color: #075f4e;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+}
+
+
+/* =========================================================
+   COMMON PRODUCT TITLE
+========================================================= */
+
+.product-card-title-link {
+  display: block;
+
+  color: inherit;
+
+  text-decoration: none;
+}
+
+.product-card-title {
+  min-height: 50px;
+
+  margin: 0 0 9px;
+
+  color: #333333;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  text-decoration: none;
+}
+
+.product-card-title-link:hover
+.product-card-title {
+  color: #075f4e;
+}
+
+
+/* =========================================================
+   COMMON RATING
+========================================================= */
+
+.product-card-rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin: 0 0 11px;
+
+  color: #d69d1e;
+
+  font-size: 13px;
+
+  line-height: 1.3;
+}
+
+.product-card-rating svg {
+  flex-shrink: 0;
+
+  color: #e0a51d;
+}
+
+
+/* =========================================================
+   COMMON PRICE
+========================================================= */
+
+.product-card-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin: 0;
+
+  line-height: 1.3;
+}
+
+.product-card-old-price {
+  color: #999999;
+
+  font-size: 14px;
+
+  text-decoration: line-through;
+}
+
+.product-card-current-price {
+  color: #075f4e;
+
+  font-size: 21px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   COMMON BEST PRICE
+========================================================= */
+
+.product-best-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  width: 100%;
+
+  margin-top: 10px;
+
+  padding: 6px 8px;
+
+  background: #e8f5e9;
+
+  color: #14705b;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEALTH SUPPLEMENT PRODUCT ROW
+========================================================= */
+
+.supplement-category-products {
+  width: 100%;
+
+  overflow: hidden;
+
+  padding: 25px 0 35px;
+
+  background: #ffffff;
+}
+
+.supplement-category-products-track {
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: nowrap;
+
+  align-items: stretch;
+
+  gap: 22px;
+
+  width: 100%;
+
+  padding: 0 32px 15px;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    #075f4e
+    #e4e4e4;
+
+  box-sizing: border-box;
+}
+
+.supplement-category-products-track::-webkit-scrollbar {
+  height: 7px;
+}
+
+.supplement-category-products-track::-webkit-scrollbar-track {
+  background: #e4e4e4;
+
+  border-radius: 10px;
+}
+
+.supplement-category-products-track::-webkit-scrollbar-thumb {
+  background: #075f4e;
+
+  border-radius: 10px;
+}
+
+.supplement-category-products-track::-webkit-scrollbar-thumb:hover {
+  background: #064d40;
+}
+
+
+/* =========================================================
+   COMMON PRODUCT CARD RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .product-card {
+    flex: 0 0 290px;
+
+    width: 290px;
+    min-width: 290px;
+    max-width: 290px;
+  }
+
+  .product-card-image {
+    height: 260px;
+    min-height: 260px;
+  }
+
+  .supplement-category-products-track {
+    gap: 18px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .product-card {
+    flex: 0 0 270px;
+
+    width: 270px;
+    min-width: 270px;
+    max-width: 270px;
+  }
+
+  .product-card-image {
+    height: 235px;
+    min-height: 235px;
+  }
+
+  .product-card-content {
+    padding: 13px;
+  }
+
+  .product-card-title {
+    font-size: 16px;
+
+    min-height: 45px;
+  }
+
+  .product-card-current-price {
+    font-size: 20px;
+  }
+
+  .supplement-category-products {
+    padding-top: 20px;
+  }
+
+  .supplement-category-products-track {
+    gap: 14px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE - COMMON CARD
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .product-card {
+    flex: 0 0 260px;
+
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+  }
+
+  .product-card-image {
+    height: 225px;
+    min-height: 225px;
+  }
+}
+
+/* =========================================================
+   A2 GHEE CATEGORY ICON SECTION
+========================================================= */
+
+.ghee-category-icons {
+  width: 100%;
+
+  padding: 55px 20px 45px;
+
+  background: #f7f3e8;
+}
+
+.ghee-category-icons-container {
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.ghee-category-label {
+  margin: 0 0 7px;
+
+  color: #b08b2e;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.ghee-category-icons-container h2 {
+  margin: 0 0 35px;
+
+  color: #075f4e;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 40px;
+
+  font-weight: 600;
+}
+
+.ghee-category-icons-list {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 55px;
+
+  width: 100%;
+}
+
+.ghee-category-icon-item {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  min-width: 110px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.ghee-category-icon-item:hover {
+  transform: translateY(-5px);
+}
+
+.ghee-category-main-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 80px;
+  height: 80px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 42px;
+
+  box-shadow:
+    0 7px 22px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ghee-category-icon-item:hover
+.ghee-category-main-icon {
+  transform: scale(1.07);
+
+  box-shadow:
+    0 12px 28px rgba(7, 95, 78, 0.15);
+}
+
+.ghee-category-icon-name {
+  color: #333333;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   GHEE CATEGORY SECTION
+========================================================= */
+
+.ghee-category-section {
+  width: 100%;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   GHEE CATEGORY BANNER
+========================================================= */
+
+.ghee-category-banner {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 380px;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+.ghee-category-banner-overlay {
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  min-height: 380px;
+
+  padding: 50px 7%;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 50, 40, 0.78),
+      rgba(0, 50, 40, 0.4),
+      rgba(0, 0, 0, 0.05)
+    );
+}
+
+.ghee-category-banner-content {
+  max-width: 650px;
+
+  color: #ffffff;
+}
+
+.ghee-category-banner-content span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #f1d98d;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.ghee-category-banner-content h2 {
+  margin: 0 0 15px;
+
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 46px;
+
+  font-weight: 600;
+}
+
+.ghee-category-banner-content p {
+  max-width: 550px;
+
+  margin: 0;
+
+  color: #f2f2f2;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   GHEE PRODUCT HORIZONTAL ROW
+========================================================= */
+
+.ghee-category-products {
+  width: 100%;
+
+  padding: 32px 0 40px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.ghee-category-products-track {
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: nowrap;
+
+  align-items: stretch;
+
+  gap: 22px;
+
+  width: 100%;
+
+  padding: 0 32px 16px;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    #075f4e
+    #e4e4e4;
+
+  box-sizing: border-box;
+}
+
+.ghee-category-products-track::-webkit-scrollbar {
+  height: 7px;
+}
+
+.ghee-category-products-track::-webkit-scrollbar-track {
+  background: #e4e4e4;
+
+  border-radius: 10px;
+}
+
+.ghee-category-products-track::-webkit-scrollbar-thumb {
+  background: #075f4e;
+
+  border-radius: 10px;
+}
+
+.ghee-category-products-track::-webkit-scrollbar-thumb:hover {
+  background: #064d40;
+}
+
+
+/* =========================================================
+   SCROLL TARGET
+========================================================= */
+
+#a2-ghee,
+#gir-ghee,
+#desi-cow-ghee,
+#buffalo-ghee,
+#ghee-combo {
+  scroll-margin-top: 100px;
+}
+
+
+/* =========================================================
+   A2 GHEE TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .ghee-category-icons-list {
+    justify-content: flex-start;
+
+    gap: 30px;
+
+    overflow-x: auto;
+
+    padding-bottom: 12px;
+
+    scrollbar-width: none;
+  }
+
+  .ghee-category-icons-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ghee-category-icon-item {
+    flex: 0 0 auto;
+  }
+
+  .ghee-category-banner,
+  .ghee-category-banner-overlay {
+    min-height: 330px;
+  }
+
+  .ghee-category-banner-content h2 {
+    font-size: 39px;
+  }
+}
+
+
+/* =========================================================
+   A2 GHEE MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .ghee-category-icons {
+    padding:
+      40px 16px
+      35px;
+  }
+
+  .ghee-category-icons-container h2 {
+    margin-bottom: 28px;
+
+    font-size: 30px;
+  }
+
+  .ghee-category-icons-list {
+    gap: 20px;
+  }
+
+  .ghee-category-icon-item {
+    min-width: 85px;
+  }
+
+  .ghee-category-main-icon {
+    width: 60px;
+    height: 60px;
+
+    font-size: 32px;
+  }
+
+  .ghee-category-icon-name {
+    font-size: 13px;
+  }
+
+  .ghee-category-banner,
+  .ghee-category-banner-overlay {
+    min-height: 280px;
+  }
+
+  .ghee-category-banner-overlay {
+    padding:
+      35px 20px;
+  }
+
+  .ghee-category-banner-content h2 {
+    font-size: 31px;
+  }
+
+  .ghee-category-banner-content p {
+    font-size: 14px;
+  }
+
+  .ghee-category-products {
+    padding:
+      22px 0
+      30px;
+  }
+
+  .ghee-category-products-track {
+    gap: 14px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* =====================================================
+   JAGGERY PAGE
+===================================================== */
+
+.jaggery-categories {
+  padding: 70px 20px 50px;
+  background: #f7f3e8;
+}
+
+.jaggery-categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.jaggery-categories-label {
+  margin: 0 0 8px;
+  color: #b08b2e;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.jaggery-categories-container h2 {
+  margin: 0 0 35px;
+  color: #075f4e;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 700;
+}
+
+.jaggery-categories-list {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 5px 5px 15px;
+  scrollbar-width: none;
+}
+
+.jaggery-categories-list::-webkit-scrollbar {
+  display: none;
+}
+
+.jaggery-category-item {
+  flex: 0 0 170px;
+  min-height: 145px;
+  padding: 22px 15px;
+  border: 1px solid rgba(7, 95, 78, 0.12);
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.jaggery-category-item:hover {
+  transform: translateY(-7px);
+  border-color: #b08b2e;
+  box-shadow: 0 15px 35px rgba(7, 95, 78, 0.12);
+}
+
+.jaggery-category-icon {
+  width: 62px;
+  height: 62px;
+  margin-bottom: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #e8f1df;
+
+  font-size: 30px;
+}
+
+.jaggery-category-name {
+  color: #075f4e;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   JAGGERY CATEGORY SECTION
+===================================================== */
+
+.jaggery-category-section {
+  background: #ffffff;
+  padding-bottom: 55px;
+}
+
+.jaggery-category-banner {
+  position: relative;
+  min-height: 320px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.jaggery-category-banner-overlay {
+  width: 100%;
+  min-height: 320px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(35, 20, 5, 0.78) 0%,
+      rgba(35, 20, 5, 0.50) 45%,
+      rgba(35, 20, 5, 0.10) 100%
+    );
+}
+
+.jaggery-category-banner-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 25px;
+}
+
+.jaggery-category-banner-content span {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  color: #f4d88a;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.jaggery-category-banner-content h2 {
+  max-width: 650px;
+  margin: 0 0 12px;
+
+  color: #ffffff;
+  font-size: clamp(32px, 5vw, 58px);
+  line-height: 1.1;
+}
+
+.jaggery-category-banner-content p {
+  max-width: 600px;
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   JAGGERY PRODUCTS
+===================================================== */
+
+.jaggery-category-products {
+  padding: 35px 20px 0;
+}
+
+.jaggery-category-products-track {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 20px;
+
+  overflow-x: auto;
+  padding: 5px 5px 20px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #b08b2e transparent;
+}
+
+.jaggery-category-products-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.jaggery-category-products-track::-webkit-scrollbar-track {
+  background: #f5f1e7;
+  border-radius: 20px;
+}
+
+.jaggery-category-products-track::-webkit-scrollbar-thumb {
+  background: #b08b2e;
+  border-radius: 20px;
+}
+
+/* Keep product cards horizontal */
+.jaggery-category-products-track .product-card {
+  flex: 0 0 280px;
+}
+
+
+/* =====================================================
+   SCROLL POSITION
+===================================================== */
+
+#jaggery-block,
+#jaggery-powder,
+#jaggery-cubes,
+#jaggery-combo {
+  scroll-margin-top: 20px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .jaggery-categories {
+    padding: 50px 15px 35px;
+  }
+
+  .jaggery-categories-container h2 {
+    margin-bottom: 25px;
+  }
+
+  .jaggery-category-item {
+    flex: 0 0 145px;
+    min-height: 125px;
+  }
+
+  .jaggery-category-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 25px;
+  }
+
+  .jaggery-category-name {
+    font-size: 14px;
+  }
+
+  .jaggery-category-banner {
+    min-height: 280px;
+  }
+
+  .jaggery-category-banner-overlay {
+    min-height: 280px;
+  }
+
+  .jaggery-category-banner-content {
+    padding: 40px 20px;
+  }
+
+  .jaggery-category-banner-content p {
+    font-size: 15px;
+  }
+
+  .jaggery-category-products {
+    padding: 25px 15px 0;
+  }
+
+  .jaggery-category-products-track {
+    gap: 15px;
+  }
+
+  .jaggery-category-products-track .product-card {
+    flex: 0 0 250px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .jaggery-categories {
+    padding-top: 40px;
+  }
+
+  .jaggery-category-item {
+    flex: 0 0 135px;
+  }
+
+  .jaggery-category-banner {
+    min-height: 250px;
+  }
+
+  .jaggery-category-banner-overlay {
+    min-height: 250px;
+  }
+
+  .jaggery-category-banner-content h2 {
+    font-size: 34px;
+  }
+
+  .jaggery-category-products-track .product-card {
+    flex: 0 0 230px;
+  }
+}

@@ -1,0 +1,647 @@
+/* =========================================================
+   CERTIFICATIONS SECTION
+========================================================= */
+
+.certifications-section {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 2px solid #075f4e;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.certifications-container {
+  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   CERTIFICATION ROW
+========================================================= */
+
+.certifications-scroll {
+  width: 100%;
+  min-height: 125px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 55px;
+
+  padding: 5px 30px;
+
+  overflow-x: auto;
+
+  scrollbar-width: none;
+}
+
+.certifications-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================================================
+   CERTIFICATION ITEM
+========================================================= */
+
+.certification-item {
+  position: relative;
+
+  flex: 0 0 auto;
+
+  min-width: 135px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #195f4e;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+
+/* Simple hover */
+
+.certification-item:hover {
+  transform: translateY(-3px);
+  opacity: 0.92;
+}
+
+
+/* =========================================================
+   ISO
+========================================================= */
+
+.certification-iso {
+  position: relative;
+
+  width: 86px;
+  height: 74px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.3s ease;
+}
+
+.certification-item:hover .certification-iso {
+  transform: scale(1.04);
+}
+
+
+/* Globe */
+
+.iso-globe {
+  position: absolute;
+
+  width: 73px;
+  height: 73px;
+
+  border: 1.8px solid #1e624f;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+
+
+.iso-globe::before {
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+  height: 1px;
+
+  background: #1e624f;
+
+  top: 50%;
+  left: 0;
+}
+
+
+.iso-globe::after {
+  content: "";
+
+  position: absolute;
+
+  width: 28px;
+  height: 72px;
+
+  border-left: 1px solid #1e624f;
+  border-right: 1px solid #1e624f;
+
+  border-radius: 50%;
+
+  left: 21px;
+  top: 0;
+}
+
+
+.iso-globe span {
+  position: absolute;
+
+  width: 73px;
+  height: 28px;
+
+  border-top: 1px solid #1e624f;
+  border-bottom: 1px solid #1e624f;
+
+  border-radius: 50%;
+
+  left: 0;
+  top: 22px;
+}
+
+
+/* ISO text */
+
+.iso-text {
+  position: relative;
+
+  z-index: 2;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 32px;
+
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: -2px;
+}
+
+
+/* ISO year */
+
+.iso-year {
+  margin-top: 2px;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   FSSAI
+========================================================= */
+
+.certification-fssai {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  transform: skewX(-8deg);
+
+  transition: transform 0.3s ease;
+}
+
+
+.certification-item:hover .certification-fssai {
+  transform:
+    skewX(-8deg)
+    scale(1.04);
+}
+
+
+.fssai-text {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 39px;
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  letter-spacing: -2px;
+
+  color: #195f4e;
+}
+
+
+.fssai-symbol {
+  width: 18px;
+  height: 42px;
+
+  position: relative;
+}
+
+
+.fssai-symbol::before {
+  content: "";
+
+  position: absolute;
+
+  width: 14px;
+  height: 28px;
+
+  border-left: 2px solid #195f4e;
+  border-bottom: 2px solid #195f4e;
+
+  border-radius:
+    0 0 0 100%;
+
+  transform: rotate(-25deg);
+
+  left: 2px;
+  top: 8px;
+}
+
+
+.fssai-symbol span {
+  position: absolute;
+
+  width: 8px;
+  height: 2px;
+
+  background: #195f4e;
+
+  transform: rotate(-45deg);
+
+  left: 4px;
+  top: 8px;
+}
+
+
+/* =========================================================
+   FDA
+========================================================= */
+
+.certification-fda {
+  position: relative;
+
+  width: 92px;
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 4px solid #195f4e;
+
+  border-radius:
+    50% 48% 45% 48%;
+
+  transform: rotate(-2deg);
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.certification-item:hover .certification-fda {
+  transform:
+    rotate(-2deg)
+    scale(1.04);
+}
+
+
+.fda-symbol {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 31px;
+
+  font-weight: 900;
+
+  color: #195f4e;
+
+  letter-spacing: -4px;
+}
+
+
+/* =========================================================
+   ROUND CERTIFICATION SEALS
+========================================================= */
+
+.certification-seal {
+  position: relative;
+
+  width: 112px;
+  height: 112px;
+
+  border: 2px solid #195f4e;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #195f4e;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Inner circle */
+
+.certification-seal::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 7px;
+
+  border: 1px solid #195f4e;
+
+  border-radius: 50%;
+}
+
+
+/* Simple hover */
+
+.certification-item:hover .certification-seal {
+  transform: scale(1.04);
+
+  box-shadow:
+    0 6px 18px
+    rgba(25, 95, 78, 0.12);
+}
+
+
+/* =========================================================
+   SEAL TEXT
+========================================================= */
+
+.seal-top {
+  position: absolute;
+
+  top: 13px;
+  left: 0;
+
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+}
+
+
+.seal-bottom {
+  position: absolute;
+
+  bottom: 12px;
+  left: 0;
+
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   GMP
+========================================================= */
+
+.seal-circle {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background: #195f4e;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  z-index: 2;
+}
+
+
+.seal-circle strong {
+  font-size: 19px;
+
+  line-height: 1;
+}
+
+
+.seal-circle span {
+  font-size: 7px;
+
+  margin-top: 3px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   ACCREDITATION
+========================================================= */
+
+.accreditation-symbol {
+  position: relative;
+
+  z-index: 2;
+
+  width: 55px;
+  height: 55px;
+
+  border: 3px solid #195f4e;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 38px;
+
+  font-weight: 700;
+
+  color: #195f4e;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   HACCP
+========================================================= */
+
+.haccp-symbol {
+  font-size: 15px;
+
+  margin-bottom: 2px;
+
+  z-index: 2;
+}
+
+
+.haccp-seal strong {
+  position: relative;
+
+  z-index: 2;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 17px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   IAF
+========================================================= */
+
+.iaf-seal strong {
+  position: relative;
+
+  z-index: 2;
+
+  font-size: 24px;
+
+  margin-top: 6px;
+}
+
+
+.iaf-symbol {
+  position: relative;
+
+  z-index: 2;
+
+  width: 34px;
+  height: 26px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 21px;
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .certifications-scroll {
+    justify-content: flex-start;
+
+    gap: 45px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .certifications-section {
+    padding: 7px 0;
+  }
+
+
+  .certifications-scroll {
+    min-height: 105px;
+
+    gap: 38px;
+
+    padding:
+      5px 20px;
+  }
+
+
+  .certification-item {
+    min-width: 105px;
+
+    height: 100px;
+  }
+
+
+  .certification-seal {
+    width: 92px;
+    height: 92px;
+  }
+
+
+  .certification-iso {
+    transform: scale(0.85);
+  }
+
+
+  .certification-fssai {
+    transform:
+      scale(0.85)
+      skewX(-8deg);
+  }
+
+
+  .certification-fda {
+    transform:
+      scale(0.85)
+      rotate(-2deg);
+  }
+
+}
